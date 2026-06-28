@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Instagram non-followers">
+  <defs>
+    <linearGradient id="bg" gradientUnits="userSpaceOnUse" x1="48" y1="32" x2="464" y2="480">
+      <stop offset="0" stop-color="#ff5c93" />
+      <stop offset=".5" stop-color="#fb4b8c" />
+      <stop offset="1" stop-color="#7c4dff" />
+    </linearGradient>
+    <linearGradient id="sheen" gradientUnits="userSpaceOnUse" x1="256" y1="0" x2="256" y2="300">
+      <stop offset="0" stop-color="#fff" stop-opacity=".20" />
+      <stop offset="1" stop-color="#fff" stop-opacity="0" />
+    </linearGradient>
+    <clipPath id="person">
+      <circle cx="222" cy="188" r="74" />
+      <path d="M104 396 C104 306 150 260 222 260 C294 260 340 306 340 396 L340 398 C340 415 326 428 309 428 L135 428 C118 428 104 415 104 398 Z" />
+    </clipPath>
+  </defs>
+
+  <rect width="512" height="512" rx="118" fill="url(#bg)" />
+  <rect width="512" height="512" rx="118" fill="url(#sheen)" />
+
+  <g transform="translate(-21,-30)">
+    <g fill="#fff">
+      <circle cx="222" cy="188" r="74" />
+      <path d="M104 396 C104 306 150 260 222 260 C294 260 340 306 340 396 L340 398 C340 415 326 428 309 428 L135 428 C118 428 104 415 104 398 Z" />
+    </g>
+    <circle cx="356" cy="372" r="96" fill="url(#bg)" clip-path="url(#person)" />
+    <circle cx="356" cy="372" r="78" fill="#fff" />
+    <rect x="313" y="361" width="86" height="22" rx="11" fill="url(#bg)" />
+  </g>
+</svg>

@@ -62,7 +62,7 @@ chamar a própria API web do Instagram. Os resultados ficam apenas em
 ├── _locales/                # Traduções (pt_BR padrão, en)
 │   ├── pt_BR/messages.json
 │   └── en/messages.json
-├── icons/                   # Ícones 16/48/128
+├── icons/                   # icon.svg (fonte) + PNGs 16/32/48/128
 ├── src/
 │   ├── content.js           # Coleta via API web do Instagram (injetado sob demanda)
 │   ├── popup.html
@@ -83,6 +83,7 @@ npm install          # instala as ferramentas de desenvolvimento
 npm run lint         # ESLint
 npm run format       # Prettier (escrita)
 npm run check        # format:check + lint
+npm run icons        # regenera os PNGs a partir de icons/icon.svg
 npm run package      # gera dist/instagram-nao-segue-de-volta-vX.Y.Z.zip
 ```
 

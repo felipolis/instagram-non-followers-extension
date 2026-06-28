@@ -53,16 +53,11 @@ body {
 }
 
 .brand-mark {
-  display: grid;
-  place-items: center;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   flex: 0 0 auto;
-  border-radius: 12px;
-  font-size: 22px;
-  font-weight: 800;
-  color: #fff;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  display: block;
+  border-radius: 11px;
 }
 
 .brand-title {
