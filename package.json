@@ -1,0 +1,33 @@
+{
+  "name": "instagram-non-followers-extension",
+  "version": "3.0.0",
+  "description": "Chrome/Chromium MV3 extension that compares who you follow on Instagram with who follows you back — 100% locally.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "package": "node scripts/package.mjs",
+    "check": "npm run format:check && npm run lint"
+  },
+  "keywords": [
+    "instagram",
+    "chrome-extension",
+    "manifest-v3",
+    "followers",
+    "non-followers"
+  ],
+  "author": "Felipe Archanjo",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "archiver": "^7.0.1",
+    "eslint": "^9.13.0",
+    "prettier": "^3.3.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

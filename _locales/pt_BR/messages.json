@@ -1,0 +1,83 @@
+{
+  "extName": { "message": "Instagram — Não Segue de Volta" },
+  "extDescription": {
+    "message": "Compara, 100% localmente, quem você segue no Instagram com quem te segue de volta."
+  },
+
+  "appTitle": { "message": "Não segue de volta" },
+  "appTagline": { "message": "Descubra quem você segue e não te segue de volta." },
+
+  "btnAnalyze": { "message": "Analisar agora" },
+  "btnAnalyzing": { "message": "Analisando…" },
+
+  "lastRun": {
+    "message": "Última análise $TIME$",
+    "placeholders": { "time": { "content": "$1" } }
+  },
+  "lastRunNever": { "message": "Nenhuma análise ainda." },
+
+  "progressProfile": { "message": "Conferindo o perfil aberto…" },
+  "progressFollowing": { "message": "Lendo quem você segue…" },
+  "progressFollowers": { "message": "Lendo seus seguidores…" },
+  "progressComputing": { "message": "Comparando as listas…" },
+  "progressRateLimited": {
+    "message": "Limite do Instagram atingido. Aguardando $SECONDS$s…",
+    "placeholders": { "seconds": { "content": "$1" } }
+  },
+  "progressRetry": { "message": "Reconectando…" },
+
+  "statFollowing": { "message": "Seguindo" },
+  "statFollowers": { "message": "Seguidores" },
+  "statMutual": { "message": "Mútuos" },
+  "statNonFollowers": { "message": "Não retribuem" },
+
+  "tabNonFollowers": { "message": "Não seguem de volta" },
+  "tabFans": { "message": "Você não segue" },
+
+  "searchPlaceholder": { "message": "Filtrar por @usuário ou nome…" },
+  "toggleShowIgnored": { "message": "Mostrar ignorados" },
+
+  "btnCopy": { "message": "Copiar" },
+  "btnCsv": { "message": "CSV" },
+  "btnJson": { "message": "JSON" },
+
+  "actionIgnore": { "message": "Ignorar" },
+  "actionUnignore": { "message": "Reverter" },
+  "badgeIgnored": { "message": "Ignorado" },
+  "badgeVerified": { "message": "Verificado" },
+  "badgePrivate": { "message": "Perfil privado" },
+  "linkOpenProfile": { "message": "Abrir perfil no Instagram" },
+
+  "emptyNonFollowers": { "message": "🎉 Todo mundo que você segue te segue de volta." },
+  "emptyFans": { "message": "Você já segue de volta todos os seus seguidores." },
+  "emptyFiltered": { "message": "Nenhum resultado para esse filtro." },
+
+  "toastCopied": { "message": "Lista copiada para a área de transferência." },
+  "toastCsv": { "message": "Arquivo CSV exportado." },
+  "toastJson": { "message": "Arquivo JSON exportado." },
+
+  "privacyNote": {
+    "message": "100% local. Sem senha e sem servidor — seus dados não saem do navegador."
+  },
+
+  "errOpenInstagram": { "message": "Abra o Instagram antes de iniciar." },
+  "errOpenProfile": { "message": "Abra a página principal do seu perfil e tente novamente." },
+  "errOwnProfile": { "message": "Abra o seu próprio perfil do Instagram para analisar." },
+  "errNoSession": {
+    "message": "Não consegui ler sua sessão. Verifique se você está logado no Instagram."
+  },
+  "errProfileFetch": { "message": "Não consegui carregar os dados do perfil." },
+  "errRateLimited": {
+    "message": "O Instagram limitou as requisições. Aguarde alguns minutos e tente de novo."
+  },
+  "errBlocked": {
+    "message": "O Instagram bloqueou ou alterou a resposta. Tente novamente mais tarde."
+  },
+  "errHttp": { "message": "Falha de comunicação com o Instagram." },
+  "errNetwork": { "message": "Falha de rede. Verifique sua conexão e tente novamente." },
+  "errSafetyLimit": { "message": "A leitura excedeu o limite de segurança." },
+  "errAlreadyRunning": { "message": "Já existe uma análise em andamento. Aguarde." },
+  "errNoTab": { "message": "Não consegui localizar a aba atual." },
+  "errNotInstagram": { "message": "Abra o Instagram em uma aba e tente novamente." },
+  "errGeneric": { "message": "Algo deu errado. Tente novamente." }
+}

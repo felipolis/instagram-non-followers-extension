@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="extName">Instagram — Não Segue de Volta</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">@</span>
+          <div>
+            <h1 class="brand-title" data-i18n="appTitle">Não segue de volta</h1>
+            <p class="brand-subtitle" data-i18n="appTagline">
+              Descubra quem você segue e não te segue de volta.
+            </p>
+          </div>
+        </div>
+        <p id="lastRun" class="last-run" hidden></p>
+      </header>
+
+      <section class="controls">
+        <button id="analyzeBtn" class="btn btn-primary" data-i18n="btnAnalyze">
+          Analisar agora
+        </button>
+      </section>
+
+      <section id="progress" class="progress" hidden aria-live="polite">
+        <div class="progress-track"><div id="progressFill" class="progress-fill"></div></div>
+        <p id="progressLabel" class="progress-label"></p>
+      </section>
+
+      <div id="alert" class="alert" role="alert" hidden></div>
+
+      <section id="summary" class="summary" hidden>
+        <div class="stat">
+          <span id="statFollowing" class="stat-value">0</span>
+          <span class="stat-label" data-i18n="statFollowing">Seguindo</span>
+        </div>
+        <div class="stat">
+          <span id="statFollowers" class="stat-value">0</span>
+          <span class="stat-label" data-i18n="statFollowers">Seguidores</span>
+        </div>
+        <div class="stat">
+          <span id="statMutual" class="stat-value">0</span>
+          <span class="stat-label" data-i18n="statMutual">Mútuos</span>
+        </div>
+        <div class="stat stat-accent">
+          <span id="statNonFollowers" class="stat-value">0</span>
+          <span class="stat-label" data-i18n="statNonFollowers">Não retribuem</span>
+        </div>
+      </section>
+
+      <section id="results" class="results" hidden>
+        <div class="tabs" role="tablist">
+          <button class="tab is-active" data-view="nonFollowers" role="tab" aria-selected="true">
+            <span data-i18n="tabNonFollowers">Não seguem de volta</span>
+            <span id="countNonFollowers" class="tab-count">0</span>
+          </button>
+          <button class="tab" data-view="fans" role="tab" aria-selected="false">
+            <span data-i18n="tabFans">Você não segue</span>
+            <span id="countFans" class="tab-count">0</span>
+          </button>
+        </div>
+
+        <div class="toolbar">
+          <input
+            id="search"
+            class="search"
+            type="search"
+            autocomplete="off"
+            data-i18n-placeholder="searchPlaceholder"
+            placeholder="Filtrar por @usuário ou nome…"
+          />
+          <label id="ignoredToggleWrap" class="check">
+            <input id="showIgnored" type="checkbox" />
+            <span data-i18n="toggleShowIgnored">Mostrar ignorados</span>
+          </label>
+        </div>
+
+        <div id="list" class="list"></div>
+
+        <div class="export">
+          <button id="copyBtn" class="btn btn-ghost" data-i18n="btnCopy">Copiar</button>
+          <button id="csvBtn" class="btn btn-ghost" data-i18n="btnCsv">CSV</button>
+          <button id="jsonBtn" class="btn btn-ghost" data-i18n="btnJson">JSON</button>
+        </div>
+      </section>
+
+      <footer class="note" data-i18n="privacyNote">
+        100% local. Sem senha e sem servidor — seus dados não saem do navegador.
+      </footer>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
